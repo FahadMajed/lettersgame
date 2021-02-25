@@ -3,9 +3,10 @@ var isRed = false;
 function greenClicked() {
 
 var audio = new Audio('sounds/bell.mp3');
+  audio.play();
 alert("اخضر!");
 
-audio.play();
+
   if (!isRed) {
     $('#box').css('background-color','green');
     $('#box').fadeTo(100, 0.3, function() {
@@ -26,8 +27,9 @@ audio.play();
 function redClicked() {
 
 var audio = new Audio('sounds/bell.mp3');
+  audio.play();
 alert("احمر!");
-audio.play();
+
   if (!isGreen)  {
     $('#box1').css('background-color','red');
 
